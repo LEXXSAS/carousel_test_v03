@@ -12,6 +12,20 @@ body {
     background-color: #b0c2c6;
 }
 
+.wrapper {
+/*    display: flex;*/
+    max-width: 600px;
+/*    margin: 25px;*/
+    overflow: hidden;
+    margin: 0 auto;
+    height: 100vh;
+    
+}
+
+.empty {
+    padding: 16px;
+}
+
 .container {
     max-width: 1320px;
     margin: 0 auto;
@@ -51,7 +65,70 @@ button.owl-prev {
     margin-right: 10px;
 }
 
+@media (min-width: 300px) {
+    body {
+        margin: 20px;
+    }
+}
+
+
+
+
+
+@media (max-width: 900px) {
+    
+    body {
+        margin: 0px;
+    }
+    
+        img {
+/*    height: auto;*/
+    height: 252px;
+    object-fit: cover;
+/*    width: 100%;*/
+    border-radius: 10px;
+ 
+}
+    
+    .owl-item.active.center img {
+    
+    height: 350px;
+}
+    
+    .empty {
+        padding: 16px;
+    }
+    
+    .wrapper {
+        max-width: 600px;
+        margin: 0 auto;
+        
+    }
+    .container {
+    display: flex;
+    
+    max-width: 844px;
+    margin: 0 auto;
+    padding: 0rem .3rem;
+    
+    
+}
+}
 @media (max-width: 768px) {
+    
+
+    
+    .wrapper {
+
+/*    display: flex;*/
+    max-width: 300px;
+/*    margin: 25px;*/
+    overflow: hidden;
+    margin: 0 auto;
+    height: 100vh;
+    
+}
+    
     img {
 /*    height: auto;*/
     height: 150px;
